@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./imge/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./main.css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>yummy</title>
+</head>
+<body class="bg-black">
+
+   
+    <div class="loading-screen position-fixed top-0 start-0 end-0 bottom-0 bg-black justify-content-center align-items-center">
+        <i class="fa fa-spinner fa-spin fa-5x"></i>
+    </div>
+
+    <div class="sidenav min-vh-100 position-fixed d-flex top-0">
+        <div class="navtabs  d-flex flex-column justify-content-between min-vh-100 p-3">
+            <div class="linkS">
+                <ul class="list-unstyled overflow-hidden text-white">
+                    <li onclick="SearchInput(); closeSideNav()" class="py-2 position-relative cursor-pointer">Search</li>
+                    <li onclick="ShowCategories(); closeSideNav()" class="py-2 position-relative cursor-pointer">Categories</li>
+                    <li onclick="ShowArea(); closeSideNav()" class="py-2 position-relative cursor-pointer">Area</li>
+                    <li onclick="ShowIngredients(); closeSideNav()" class="py-2 position-relative cursor-pointer">Ingredients</li>
+                    <li onclick="ContactUs(); closeSideNav()" class="py-2 position-relative cursor-pointer">Contact Us</li>
+                </ul>
+            </div>
+            <div class="nav-out">
+                <div class="icons text-white">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-solid fa-globe"></i>
+                </div>
+                <div class="outer text-white">
+                    <p>Copyright Â© 2019 All Rights <br>Reserved.</p>
+                </div>
+            </div>
+        </div>
+        <div class="nav-logo d-flex flex-column justify-content-between py-4 text-center px-2 bg-white text-black">
+            <img class="logo" src="./imge/logo.png" alt="" srcset="">
+            <i class="fa-solid open-close-icon fa-align-justify fa-2x"></i>
+            <div>
+                <i class="fa-solid fa-globe d-block"></i>
+                <i class="fa-solid fa-share-nodes"></i>
+            </div>
+        </div>
+    </div>
+
+    
+  <div class="container">
+    <div class="row py-3 g-4" id="ImgData">
+        
+    </div>
+  </div>
+
+
+    <div class="container w-75" id="SearchInputs">
+    </div>
+
+   <!--<div class="contact-us min-vh-100 d-flex justify-content-center align-items-center">
+        <div class="container w-75 text-center">
+            <div class="row g-3">
+                <div class="col-md-6">
+                    <input type="text" class="form-control" placeholder="Enter Your Name">
+                </div>
+                <div class="col-md-6">
+                    <input type="email" class="form-control " placeholder="Enter Your Email">
+                    
+                </div>
+                <div class="col-md-6">
+                    <input type="text" class="form-control " placeholder="Enter Your Phone">
+
+                </div>
+                <div class="col-md-6">
+                    <input  type="number" class="form-control " placeholder="Enter Your Age">
+                    
+                </div>
+                <div class="col-md-6">
+                    <input  type="password" class="form-control " placeholder="Enter Your Password">
+                    
+                </div>
+                <div class="col-md-6">
+                    <input  type="password" class="form-control " placeholder="Repassword">
+                </div>
+            </div>
+            <button class="btn btn-outline-danger px-3 mt-3">Submit</button>
+        </div>
+    </div>-->
+
+
+
+    <script src="./jquery-3.6.0.min.js"></script>
+    <script src="./main.js/bootstrap.bundle.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
